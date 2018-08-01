@@ -1,0 +1,10 @@
+<launch>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch" />
+
+  <node name="spawn_hexapod" pkg="gazebo_ros" type="spawn_model"
+    args="-file $(find hexapod_description)/urdf/hexapod.urdf -urdf -z 1 -model hexapod" />
+
+  <include file="$(find hexapod_control)/launch/simulation.launch" />
+
+</launch>

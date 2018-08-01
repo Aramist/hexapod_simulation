@@ -1,0 +1,14 @@
+<launch>
+
+  <rosparam file="$(find hexapod_control)/config/hexapod_control.yaml" command="load"/>
+
+  <node name="controller_spawner" pkg="controller_manager" type="spawner"
+    respawn="false" output="screen" ns="/hexapod" args="lf_thigh lf_knee lf_ankle lm_thigh lm_knee lm_ankle lr_thigh lr_knee lr_ankle rf_thigh rf_knee rf_ankle rm_thigh rm_knee rm_ankle rr_thigh rr_knee rr_ankle"/>
+
+  <param name="/robot_description" command="cat $(find hexapod_description)/urdf/hexapod.urdf" />
+
+  <node name="hexapod_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+    <remap from="/joint_states" to="/hexapod/joint_states"/>
+  </node>
+
+</launch>

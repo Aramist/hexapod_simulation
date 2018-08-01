@@ -1,0 +1,85 @@
+hexapod:
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+
+  lf_thigh:
+    type: effort_controllers/JointPositionController
+    joint: j_thigh_lf
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  lf_knee:
+    type: effort_controllers/JointPositionController
+    joint: j_knee_lf
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  lf_ankle:
+    type: effort_controllers/JointPositionController
+    joint: j_ankle_lf
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  rf_thigh:
+    type: effort_controllers/JointPositionController
+    joint: j_thigh_rf
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  rf_knee:
+    type: effort_controllers/JointPositionController
+    joint: j_knee_rf
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  rf_ankle:
+    type: effort_controllers/JointPositionController
+    joint: j_ankle_rf
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+
+  lm_thigh:
+    type: effort_controllers/JointPositionController
+    joint: j_thigh_lm
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  lm_knee:
+    type: effort_controllers/JointPositionController
+    joint: j_knee_lm
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  lm_ankle:
+    type: effort_controllers/JointPositionController
+    joint: j_ankle_lm
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  rm_thigh:
+    type: effort_controllers/JointPositionController
+    joint: j_thigh_rm
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  rm_knee:
+    type: effort_controllers/JointPositionController
+    joint: j_knee_rm
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  rm_ankle:
+    type: effort_controllers/JointPositionController
+    joint: j_ankle_rm
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+
+  lr_thigh:
+    type: effort_controllers/JointPositionController
+    joint: j_thigh_lr
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  lr_knee:
+    type: effort_controllers/JointPositionController
+    joint: j_knee_lr
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  lr_ankle:
+    type: effort_controllers/JointPositionController
+    joint: j_ankle_lr
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  rr_thigh:
+    type: effort_controllers/JointPositionController
+    joint: j_thigh_rr
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  rr_knee:
+    type: effort_controllers/JointPositionController
+    joint: j_knee_rr
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  rr_ankle:
+    type: effort_controllers/JointPositionController
+    joint: j_ankle_rr
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+
+  

@@ -1,0 +1,4 @@
+#! /usr/bin/env bash
+rm urdf/hexapod.urdf
+rosrun xacro xacro urdf/hexapod.xacro -o urdf/hexapod.urdf
+
