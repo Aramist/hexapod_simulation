@@ -207,10 +207,10 @@
    <transmission name="t_thigh_${suffix}">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="j_thigh_${suffix}">
-      <hardwareInterface>EffortJointInterface</hardwareInterface>    
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>    
     </joint>
     <actuator name="m_thigh_${suffix}">
-      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
@@ -219,10 +219,10 @@
    <transmission name="t_knee_${suffix}">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="j_knee_${suffix}">
-      <hardwareInterface>EffortJointInterface</hardwareInterface>    
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>    
     </joint>
     <actuator name="m_knee_${suffix}">
-      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
@@ -231,10 +231,10 @@
    <transmission name="t_ankle_${suffix}">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="j_ankle_${suffix}">
-      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     </joint>
     <actuator name="m_ankle_${suffix}">
-      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
