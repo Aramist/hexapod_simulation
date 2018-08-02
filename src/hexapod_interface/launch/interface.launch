@@ -1,0 +1,5 @@
+<launch>
+
+  <node name="hexapod_interface" pkg="hexapod_interface" type="interface" />
+
+</launch>
