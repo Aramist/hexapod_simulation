@@ -6,5 +6,6 @@
     args="-file $(find hexapod_description)/urdf/hexapod.urdf -urdf -z 0.5 -model hexapod" />
 
   <include file="$(find hexapod_control)/launch/hexapod_control.launch" />
+  <include file="$(find hexapod_interface)/launch/interface.launch" />
 
 </launch>
