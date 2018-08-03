@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>hexapod_interface</name>
+  <version>1.0.0</version>
+  <description>A high level interface for controlling the joints of the simulated hexapod.</description>
+
+
+  <maintainer email="aramis.tanelus@gmail.com">Aramis Tanelus</maintainer>
+  <author email="aramis.tanelus@gmail.com">Aramis Tanelus</author>
+
+  <license>MIT</license>
+
+
+  <url type="repository">https://github.com/Aramist/hexapod_simulation</url>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>hexapod_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_export_depend>hexapod_msgs</build_export_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <exec_depend>hexapod_msgs</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+</package>
