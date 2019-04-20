@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="console_control" name="console_control" type="main" output="screen"/>
+</launch>

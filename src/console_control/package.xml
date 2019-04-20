@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>console_control</name>
+  <version>1.0.0</version>
+  <description>Control the hexapod through simple text input</description>
+
+  <maintainer email="aramis.tanelus@gmail.com">Aramis Tanelus</maintainer>
+ 
+
+  <license>MIT</license>
+
+
+  <url type="repository">https://github.com/Aramist/hexapod_simulation</url>
+
+
+  <author email="aramis.tanelus@gmail.com">Aramis Tanelus</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>hexapod_msgs</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>message_runtime</build_depend>
+  <build_export_depend>hexapod_msgs</build_export_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <exec_depend>hexapod_msgs</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <exec_depend>rospy</exec_depend>
+
+</package>
