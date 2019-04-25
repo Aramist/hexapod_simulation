@@ -1,0 +1,7 @@
+#! /usr/bin/env python
+
+import console_controller.main as main
+
+
+if __name__ == '__main__':
+	main.run()
